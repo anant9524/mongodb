@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "$(tput setaf 1)Installing all dependencies"
+tput setaf 7
+sudo apt-get install dirmngr gnupg apt-transport-https ca-certificates software-properties-common -y
 echo "$(tput setaf 1)Installing mongoDB repo"
 tput setaf 7
 sudo wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
